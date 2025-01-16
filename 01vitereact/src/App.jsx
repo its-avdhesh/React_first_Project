@@ -1,9 +1,8 @@
-import New from "./newFunction"
 function App() {
-
+ const username = "Hello this is js"
   return (
     <>
-      <New/>
+    <h1>This is our js- {username} </h1>
     </>
     
   )
