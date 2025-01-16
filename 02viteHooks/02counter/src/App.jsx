@@ -4,15 +4,24 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [ counter , setCounter ]= useState(15);
+  let [ counter , setCounter ]= useState(0);
   
   const addValue= ()=>{
-    console.log("Value Added", Math.random());
     console.log(counter);
-    setCounter(counter + 1)
+    if(counter <20){
+      setCounter(counter + 1);
+    }else{
+      console.log("The counter can not ne added further");
+    }
   }
   const removeValue = () =>{
-    setCounter(counter -1)
+    if(counter>0){
+      setCounter(counter -1)
+    }else{
+      console.log("The counter can not be decremented more");
+    }
+    
+
   }
 
   return (
