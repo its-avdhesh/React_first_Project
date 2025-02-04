@@ -58,7 +58,7 @@ function Pagination() {
           Prev
         </button>
         {Array.from({ length: totalPages }, (_, index) => (
-          <button key={index + 1} onClick={() => setCurrentPage(index + 1)} className={currentPage === index + 1 ? 'active' : ''}>
+          <button key={index + 1} onClick={() => setCurrentPage(index + 1)}>
             {index + 1}
           </button>
         ))}
